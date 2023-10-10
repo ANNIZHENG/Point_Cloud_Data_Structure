@@ -13,8 +13,8 @@ pip install networkx
 <img src="images/sample_original.png" alt="The Original Sample File" width="300" height="200">
 
 #### Analyze the Sample Point Cloud file in Octree Structure using Open3D
-<img src="images/sample_3d_octree_depth=5.png" alt="3D Visualization of Octree with max depth = 5" width="300" height="200">
-<img src="images/sample_3d_octree_depth=3.png" alt="3D Visualization of Octree with max depth = 3" width="300" height="200">
+<img src="images/sample_3d_octree_depth=5.png" alt="3D Visualization of Octree with max depth = 5" width="300" height="300">
+<img src="images/sample_3d_octree_depth=3.png" alt="3D Visualization of Octree with max depth = 3" width="300" height="300">
 
 #### Analyze the Sample Point Cloud file in Octree Structure using Matplotlib, NetworkX, NumPy
 <img src="images/sample_2d_octree_depth=5.png" alt="2D Visualization of Octree with max depth = 5" width="300" height="200">

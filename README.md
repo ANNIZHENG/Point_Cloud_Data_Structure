@@ -9,9 +9,8 @@ pip install open3d
 pip install networkx
 ```
 
-#### Sample point cloud data shape: (196133, 3)
+#### Sample Point Cloud file with shape: (196133, 3)
 <img src="images/sample_original.png" alt="The Original Sample File" width="300" height="200">
-The Original Sample File
 
 #### Analyze the Sample Point Cloud file in Octree Structure using Open3D
 <img src="images/compare_test_3d.png" alt="Compare 3D Test Visualizations" width="550" height="250">

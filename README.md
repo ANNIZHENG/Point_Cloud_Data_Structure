@@ -14,7 +14,7 @@ pip install networkx
 The Original Sample File
 
 #### Analyze the Sample Point Cloud file in Octree Structure using Open3D
-<img src="images/compare_test_3d.png" alt="Compare 3D Test Visualizations" width="500" height="250">
+<img src="images/compare_test_3d.png" alt="Compare 3D Test Visualizations" width="550" height="250">
 
 #### Analyze the Sample Point Cloud file in Octree Structure using Matplotlib, NetworkX, NumPy
 <img src="images/compare_test_2d.png" alt="Compare 2D Test Visualizations" width="500" height="250">

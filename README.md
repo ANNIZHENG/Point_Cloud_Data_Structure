@@ -10,7 +10,7 @@ pip install networkx
 ```
 
 #### Sample point cloud data shape: (196133, 3)
-![The Original Sample File](images/sample_original.png)
+<img src="images/sample_original.png" alt="The Original Sample File" style="width:200px height:100px">
 
 #### Analyze the Sample Point Cloud file in Octree Structure using Open3D
 ![3D Visualization of Octree with max depth = 5](images/sample_3d_octree_depth=5.png)

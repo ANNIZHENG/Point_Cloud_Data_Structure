@@ -1,5 +1,5 @@
 ## NYUVIP-Point-Cloud-Data-Structure
-NYU Urban LiDAR and Remote Sensing (GY) Team Project
+### NYU Urban LiDAR and Remote Sensing (GY) Team Project
 
 Create a virtual environment for running the code:
 ```

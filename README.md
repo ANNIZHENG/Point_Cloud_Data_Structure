@@ -13,15 +13,15 @@ pip install networkx
 <img src="images/sample_original.png" alt="The Original Sample File" width="300" height="200">
 
 #### Analyze the Sample Point Cloud file in Octree Structure using Open3D
-![3D Visualization of Octree with max depth = 5](images/sample_3d_octree_depth=5.png)
-![3D Visualization of Octree with max depth = 3](images/sample_3d_octree_depth=3.png)
+<img src="images/sample_3d_octree_depth=5.png" alt="3D Visualization of Octree with max depth = 5" width="300" height="200">
+<img src="images/sample_3d_octree_depth=3.png" alt="3D Visualization of Octree with max depth = 3" width="300" height="200">
 
 #### Analyze the Sample Point Cloud file in Octree Structure using Matplotlib, NetworkX, NumPy
-![2D Visualization of Octree with max depth = 5](images/sample_2d_octree_depth=5.png)
-![2D Visualization of Octree with max depth = 3](images/sample_2d_octree_depth=3.png)
+<img src="images/sample_2d_octree_depth=5.png" alt="2D Visualization of Octree with max depth = 5" width="300" height="200">
+<img src="images/sample_2d_octree_depth=3.png" alt="2D Visualization of Octree with max depth = 3" width="300" height="200">
 
 #### A Better Visualization in 2D?
-![A Better 2D Visualization of Octree with max depth = 3](images/sample_2d_octree_depth=3_.png)
+<img src="images/sample_2d_octree_depth=3_.png" alt="A Better 2D Visualization of Octree with max depth = 3" width="300" height="200">
 
 #### Time spent of running tests/test2_networkx.py in relation to the desired depth of the Octree
 Time Spent = Time to load data file + Time to Construct Octree + Time to Visualize data file

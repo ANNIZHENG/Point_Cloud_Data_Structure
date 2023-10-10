@@ -17,8 +17,8 @@ pip install networkx
 <img src="images/sample_3d_octree_depth=3.png" alt="3D Visualization of Octree with max depth = 3" width="300" height="250">
 
 #### Analyze the Sample Point Cloud file in Octree Structure using Matplotlib, NetworkX, NumPy
-<img src="images/sample_2d_octree_depth=5.png" alt="2D Visualization of Octree with max depth = 5" width="300" height="200">
-<img src="images/sample_2d_octree_depth=3.png" alt="2D Visualization of Octree with max depth = 3" width="300" height="200">
+<img src="images/sample_2d_octree_depth=5.png" alt="2D Visualization of Octree with max depth = 5" width="300" height="250">
+<img src="images/sample_2d_octree_depth=3.png" alt="2D Visualization of Octree with max depth = 3" width="300" height="250">
 
 #### A Better Visualization in 2D?
 <img src="images/sample_2d_octree_depth=3_.png" alt="A Better 2D Visualization of Octree with max depth = 3" width="300" height="200">

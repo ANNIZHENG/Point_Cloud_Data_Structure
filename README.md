@@ -12,13 +12,13 @@ pip install networkx
 #### Sample Point Cloud File
 <img src="images/sample_data.png" width="300" height="200">
 
-#### Analyze Sample Point Cloud File in Open3D
+#### Analyze Sample Point Cloud in Octree Structure in Open3D
 <img src="images/test0_octree.png" width="550" height="250">
 
-#### Analyze Sample Point Cloud File in Octree Structure using Matplotlib, NetworkX, NumPy, and Gephi
+#### Analyze Sample Point Cloud in Octree Structure in Gephi
 <img src="images/test2_gephi_octree.png" width="400" height="400">
 
-#### Analyze Sample Point Cloud File in K-D Tree Structure using Matplotlib, NetworkX, NumPy, and Gephi
+#### Analyze Sample Point Cloud in K-D Tree Structure in Gephi
 <img src="images/test2_gephi_kdtree.png" width="400" height="400">
 
 <!-- #### Time spent of running tests/test2_networkx.py in relation to the desired depth of the Octree

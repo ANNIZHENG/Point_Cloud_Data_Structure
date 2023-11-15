@@ -52,16 +52,20 @@ root_id = root.id
 graph.add_node(root_id)
 kdtree_visualization(graph, root, root_id)
 
-degrees = dict(nx.degree(graph))
-normalized_degrees = [(d - min(degrees.values())) / (max(degrees.values()) - min(degrees.values())) for d in degrees.values()]
-
-cmap = plt.get_cmap('coolwarm')
-nx.draw(graph, pos=nx.spring_layout(graph),
-        nodelist=degrees.keys(),
-        node_size=[s * 50 for s in degrees.values()],
-        node_color=[cmap(c) for c in normalized_degrees])
-
 end_time = time.time()  # Timer stops
 
 print('Performance: ', end_time - start_time, '\n')
+
+
+# Export viaulization for Gephi
+pos = nx.spring_layout(graph, k=0.2)
+
+degrees = dict(nx.degree(graph))
+
+nx.draw(graph, pos=pos, nodelist=degrees.keys())
+
 plt.show()
+
+nx.write_gexf(graph, 'test2_gephi_kdtree.gexf')
+
+

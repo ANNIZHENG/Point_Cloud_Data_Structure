@@ -1,8 +1,8 @@
+
 import numpy as np
 import matplotlib.pyplot as plt
 import networkx as nx
 import open3d as o3d
-import time
 
 start_time = time.time() # Timer starts
 
@@ -12,7 +12,7 @@ point_cloud = np.asarray(point_cloud_file.points) # shape: (196133, 3) - there a
 
 # Octree Data Structure
 class Node:
-    def __init__(self, points, center, half_width, depth=0, max_depth=5, max_points=8): # max_depth=6, max_points=8*8?
+    def __init__(self, points, center, half_width, depth=0, max_depth=3, max_points=8): # max_depth=6, max_points=8*8?
         self.points = points
         self.center = center
         self.half_width = half_width
@@ -50,15 +50,8 @@ class Node:
 
 # Create Octree
 center = np.mean(point_cloud, axis=0) # Center of where the Octree starts subdeviding
-half_width = np.max(np.ptp(point_cloud, axis=0)/2.0) # 
+half_width = np.max(np.ptp(point_cloud, axis=0)/2.0)
 root = Node(point_cloud, center, half_width)
-
-# Visualize Point Cloud file
-# fig = plt.figure()
-# plt.title("Octree with Maximum Depth = 3 and Maximum Leaf Number = 8")
-
-# ax = fig.add_subplot(111, projection='3d')
-# ax.scatter(point_cloud[:,0], point_cloud[:,1], point_cloud[:,2], s=1)
 
 # Visualize Octree structure of Point Cloud file
 def octree_visualization(graph, root, root_id):
@@ -81,28 +74,22 @@ root_id = root.id
 # Add nodes and edges through traversing the octree
 graph.add_node(root_id)
 octree_visualization(graph, root, root_id)
-degrees = dict(nx.degree(graph))
-
-# Viaulization
-# nx.draw(graph, nx.spring_layout(graph), node_size=25)
-
-# normalize degrees
-max_degree = max(degrees.values())
-min_degree = min(degrees.values())
-normalized_degrees = [(d - min_degree)/(max_degree - min_degree) for d in degrees.values()]
-
-cmap = plt.get_cmap('coolwarm')
-nx.draw(graph, pos=nx.spring_layout(graph), 
-            nodelist=degrees.keys(), 
-            node_size=[s * 50 for s in degrees.values()], 
-            node_color=[cmap(c) for c in normalized_degrees])
 
 end_time = time.time() # Timer stops
 
 print('Performance: ', end_time - start_time, '\n')
 
+
+# Export viaulization for Gephi
+pos = nx.spring_layout(graph, k=0.2)
+
+degrees = dict(nx.degree(graph))
+
+nx.draw(graph, pos=pos, nodelist=degrees.keys())
+
 plt.show()
 
+nx.write_gexf(graph, 'test2_gephi_octree.gexf')
 
 
 

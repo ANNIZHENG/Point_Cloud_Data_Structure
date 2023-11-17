@@ -3,8 +3,10 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import open3d as o3d
 import time
+import psutil
 
 start_time = time.time()  # Timer starts
+initial_memory = psutil.Process().memory_info().rss / (1024 * 1024) # Memory check starts
 
 # Retrieve an actual Point Cloud file
 point_cloud_file = o3d.io.read_point_cloud(o3d.data.PLYPointCloud().path)
@@ -53,8 +55,11 @@ graph.add_node(root_id)
 kdtree_visualization(graph, root, root_id)
 
 end_time = time.time()  # Timer stops
+final_memory = psutil.Process().memory_info().rss / (1024 * 1024) #Memory check ends
+memory_used = final_memory - initial_memory
 
 print('Performance: ', end_time - start_time, '\n')
+print('Memory Used: ', memory_used, 'MB')
 
 
 # Export viaulization for Gephi

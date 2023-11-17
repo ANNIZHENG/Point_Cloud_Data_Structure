@@ -1,10 +1,12 @@
-
 import numpy as np
 import matplotlib.pyplot as plt
 import networkx as nx
 import open3d as o3d
+import time
+import psutil
 
 start_time = time.time() # Timer starts
+initial_memory = psutil.Process().memory_info().rss / (1024 * 1024) # Memory check starts
 
 # Retrieve an actual Point Cloud file
 point_cloud_file = o3d.io.read_point_cloud(o3d.data.PLYPointCloud().path)
@@ -33,18 +35,18 @@ class Node:
                     new_center = [self.center[0] + dx * self.half_width,
                                 self.center[1] + dy * self.half_width,
                                 self.center[2] + dz * self.half_width]
-                    
+
                     # Find points inside the boudning box
                     child_points = [pt for pt in self.points if self.point_found(pt, new_center)]
-                    
+
                     # If there are points, create child node
                     if len(child_points) > 0:
                         child = Node(child_points, new_center, self.half_width*0.5, self.depth+1)
                         self.children.append(child)
-                    
+
     def point_found(self, point, center):
         hw = self.half_width * 0.5  # new half width
-        return (center[0] - hw <= point[0] <= center[0] + hw and 
+        return (center[0] - hw <= point[0] <= center[0] + hw and
                 center[1] - hw <= point[1] <= center[1] + hw and
                 center[2] - hw <= point[2] <= center[2] + hw)
 
@@ -76,8 +78,11 @@ graph.add_node(root_id)
 octree_visualization(graph, root, root_id)
 
 end_time = time.time() # Timer stops
+final_memory = psutil.Process().memory_info().rss / (1024 * 1024) #Memory check ends
+memory_used = final_memory - initial_memory
 
 print('Performance: ', end_time - start_time, '\n')
+print('Memory Used: ', memory_used, 'MB')
 
 
 # Export viaulization for Gephi

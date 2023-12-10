@@ -2,12 +2,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 import networkx as nx
 import time
-# import psutil
+import psutil
 import laspy
+
+start_time = time.time() # Timer starts
+initial_memory = psutil.Process().memory_info().rss / (1024 * 1024) # Memory check starts
 
 # Read the LAS file and convert it into a point cloud
 
-las_file = laspy.read("Tree/tree_chunked_distance=2.las")
+las_file = laspy.read("input.las")
 
 point_cloud = np.vstack((las_file.x, las_file.y, las_file.z)).transpose()
 
@@ -53,16 +56,24 @@ root_id = root.id
 graph.add_node(root_id)
 kdtree_visualization(graph, root, root_id)
 
-# Export viaulization for Gephi
+end_time = time.time() # Timer stops
+final_memory = psutil.Process().memory_info().rss / (1024 * 1024) #Memory check ends
+memory_used = final_memory - initial_memory
+
+print('Performance: ', end_time - start_time)
+print('Memory Used: ', memory_used, 'MB')
+
+# Preview viaulization
+
 pos = nx.spring_layout(graph, k=0.2)
 
 degrees = dict(nx.degree(graph))
 
 nx.draw(graph, pos=pos, nodelist=degrees.keys())
 
-# plt.show()
+plt.show()
 
 # Write to Gephi
 
-nx.write_gexf(graph, "gephis/tree/tree_chunked_distance=2_kdtree.gexf")
+nx.write_gexf(graph, "output.gexf")
 

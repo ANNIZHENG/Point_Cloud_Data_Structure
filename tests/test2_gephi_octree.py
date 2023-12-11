@@ -18,7 +18,7 @@ class Node:
         self.points = points
         self.center = center
         self.half_width = half_width
-        self.depth = depth # max depth to preven overfitting
+        self.depth = depth # max depth to prevent overfitting
         self.children = []
         self.id = np.random.randint(1e4)  # assign unique identifier of each node
 

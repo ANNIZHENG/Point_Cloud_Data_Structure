@@ -16,7 +16,7 @@ point_cloud = np.vstack((las_file.x, las_file.y, las_file.z)).transpose()
 
 # Octree Data Structure
 class Node:
-    def __init__(self, points, center, half_width, depth=0, max_depth=5, max_points=8): # max_depth=6, max_points=8*8?
+    def __init__(self, points, center, half_width, depth=0, max_depth=100, max_points=8): 
         self.points = points
         self.center = center
         self.half_width = half_width

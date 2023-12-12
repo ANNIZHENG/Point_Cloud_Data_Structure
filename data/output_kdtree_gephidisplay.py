@@ -16,7 +16,7 @@ point_cloud = np.vstack((las_file.x, las_file.y, las_file.z)).transpose()
 
 # k-d Tree Data Structure
 class Node:
-    def __init__(self, points, depth=0, max_depth=5, max_points=8):
+    def __init__(self, points, depth=0, max_depth=100, max_points=8):
         self.points = points
         self.axis = depth % 3  # Choose axis based on depth
         self.depth = depth

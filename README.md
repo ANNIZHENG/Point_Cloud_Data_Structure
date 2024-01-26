@@ -18,7 +18,7 @@ You may inspect the octree structure of the sample point cloud in Open3D.
 You can also inspect the octree or k-d tree structure of the file using the code in the test file, and clean the graph using Gephi.
 
 <img src="images/test2_gephi_octree.png" width="300" height="300">
-<img src="images/test2_gephi_kdtree.png" width="300" height="300">
+<img src="images/test2_gephi_kdtree.png" width="250" height="250">
 
 Here is a  more complicated example with larger point cloud file in octree structure.
 <img src="gephis/octree-cleaned/streetlight_chunked_octree.png" width="300" height="310">

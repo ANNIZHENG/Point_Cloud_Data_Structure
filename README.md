@@ -21,5 +21,5 @@ You can also inspect the octree or k-d tree structure of the file using the code
 <img src="images/test2_gephi_kdtree.png" width="300" height="300">
 
 Here is a  more complicated example with larger point cloud file in octree structure.
-<img src="gephis/octree-cleaned/streetlight_chunked_octree.png" width="300" height="380">
-<img src="gephis/kdtree-cleaned/streetlight_chunked_kdtree.png" width="300" height="380">
+<img src="gephis/octree-cleaned/streetlight_chunked_octree.png" width="300" height="330">
+<img src="gephis/kdtree-cleaned/streetlight_chunked_kdtree.png" width="300" height="330">

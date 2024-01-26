@@ -22,4 +22,4 @@ pip install networkx
 <img src="images/test2_gephi_kdtree.png" width="300" height="300">
 
 #### Here is a  more complicated example with larger point cloud file in octree structure.
-<img src="gephis/octree-cleaned/streetlight_chunked_octree.png" width="400" height="430">
+<img src="gephis/octree-cleaned/streetlight_chunked_octree.png" width="450" height="430">

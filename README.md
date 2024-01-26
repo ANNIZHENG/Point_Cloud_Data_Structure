@@ -20,11 +20,3 @@ pip install networkx
 
 #### Analyze Sample Point Cloud in K-D Tree Structure in Gephi
 <img src="images/test2_gephi_kdtree.png" width="400" height="400">
-
-<!-- #### Time spent of running tests/test2_networkx.py in relation to the desired depth of the Octree
-Time Spent = Time to load data file + Time to Construct Octree + Time to Visualize data file
-| Depth         | Time Spent(s) |
-| ------------- |:-------------:|
-| 3             | ~1.41         |
-| 4             | ~1.97         |
-| 5             | ~4.84         | -->

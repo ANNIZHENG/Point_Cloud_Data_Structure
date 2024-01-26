@@ -9,15 +9,17 @@ pip install open3d
 pip install networkx
 ```
 
-#### Sample Point Cloud File
+Sample Point Cloud File
 <img src="images/sample_data.png" width="300" height="200">
 
-#### You may inspect the octree structure of the sample point cloud in Open3D.
+You may inspect the octree structure of the sample point cloud in Open3D.
 <img src="images/test0_octree.png" width="550" height="250">
 
-#### You can also inspect the octree or k-d tree structure of the file using the code in the test file, and clean the graph using Gephi.
-<img src="images/test2_gephi_octree.png" width="200" height="200">
-<img src="images/test2_gephi_kdtree.png" width="200" height="200">
+You can also inspect the octree or k-d tree structure of the file using the code in the test file, and clean the graph using Gephi.
 
-#### Here is a  more complicated example with larger point cloud file in octree structure.
-<img src="gephis/octree-cleaned/streetlight_chunked_octree.png" width="450" height="430">
+<img src="images/test2_gephi_octree.png" width="300" height="300">
+<img src="images/test2_gephi_kdtree.png" width="300" height="300">
+
+Here is a  more complicated example with larger point cloud file in octree structure.
+<img src="gephis/octree-cleaned/streetlight_chunked_octree.png" width="400" height="300">
+<img src="gephis/kdtree-cleaned/streetlight_chunked_kdtree.png" width="400" height="300">

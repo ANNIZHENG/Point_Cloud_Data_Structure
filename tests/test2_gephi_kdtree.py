@@ -9,7 +9,7 @@ start_time = time.time()  # Timer starts
 initial_memory = psutil.Process().memory_info().rss / (1024 * 1024) # Memory check starts
 
 # Retrieve an actual Point Cloud file
-point_cloud_file = o3d.io.read_point_cloud(o3d.data.PLYPointCloud().path)
+point_cloud_file = o3d.io.read_point_cloud(...) # las file path here
 point_cloud = np.asarray(point_cloud_file.points)  # Retrieve the points
 
 # k-d Tree Data Structure
@@ -61,16 +61,20 @@ memory_used = final_memory - initial_memory
 print('Performance: ', end_time - start_time, '\n')
 print('Memory Used: ', memory_used, 'MB')
 
+nx.write_gexf(graph, ...) # output file name here
 
-# Export viaulization for Gephi
-pos = nx.spring_layout(graph, k=0.2)
+'''
+Performance: 
 
-degrees = dict(nx.degree(graph))
+House
+K-D Tree Performance:  1.7642369270324707
+K-D Tree Memory Used:  221.484375 MB
 
-nx.draw(graph, pos=pos, nodelist=degrees.keys())
+Tree
+K-D Tree Performance:  1.0891039371490479
+K-D Tree Memory Used:  143.546875 MB
 
-plt.show()
-
-nx.write_gexf(graph, 'test2_gephi_kdtree.gexf')
-
-
+Streetlight
+K-D Tree Performance:  0.07814693450927734
+K-D Tree Memory Used:  9.84375 MB
+'''

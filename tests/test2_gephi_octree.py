@@ -9,12 +9,12 @@ start_time = time.time() # Timer starts
 initial_memory = psutil.Process().memory_info().rss / (1024 * 1024) # Memory check starts
 
 # Retrieve an actual Point Cloud file
-point_cloud_file = o3d.io.read_point_cloud(o3d.data.PLYPointCloud().path)
-point_cloud = np.asarray(point_cloud_file.points) # shape: (196133, 3) - there are 195133 cooridnates of (x,y,z)
+point_cloud_file = o3d.io.read_point_cloud(...) # las file path here
+point_cloud = np.asarray(point_cloud_file.points) 
 
 # Octree Data Structure
 class Node:
-    def __init__(self, points, center, half_width, depth=0, max_depth=3, max_points=8): # max_depth=6, max_points=8*8?
+    def __init__(self, points, center, half_width, depth=0, max_depth=100, max_points=8): # max_depth=6, max_points=8*8?
         self.points = points
         self.center = center
         self.half_width = half_width
@@ -84,17 +84,20 @@ memory_used = final_memory - initial_memory
 print('Performance: ', end_time - start_time, '\n')
 print('Memory Used: ', memory_used, 'MB')
 
+nx.write_gexf(graph, ...) # output file name here
 
-# Export viaulization for Gephi
-pos = nx.spring_layout(graph, k=0.2)
+'''
+Performance:
 
-degrees = dict(nx.degree(graph))
+House
+Octree Performance:  7.421552896499634
+Octree Memory Used:  240.984375 MB
 
-nx.draw(graph, pos=pos, nodelist=degrees.keys())
+Tree
+Octree Performance:  4.806403160095215
+Octree Memory Used:  173.234375 MB
 
-plt.show()
-
-nx.write_gexf(graph, 'test2_gephi_octree.gexf')
-
-
-
+Streetlight
+Octree Performance:  0.3431971073150635
+Octree Memory Used:  13.921875 MB
+'''

@@ -1,7 +1,7 @@
 ## NYUVIP-Point-Cloud-Data-Structure
-### NYU Urban LiDAR and Remote Sensing (GY) Team Project
+### Urban LiDAR and Remote Sensing Data Structure Team Project
 
-#### Create a virtual environment to run the programs in tests directory
+#### Create a virtual environment to run the programs in `tests` directory
 ```
 python3.9 -m venv ENV_NAME
 source ENV_NAME/bin/activate
@@ -9,19 +9,20 @@ pip install open3d
 pip install networkx
 ```
 
-Sample Point Cloud File
+Keywords: 
 
-<img src="images/sample_data.png" width="300" height="200">
+Urban Studies, Storage and Access of Point Cloud File, Data Structure
 
-You may inspect the octree structure of the sample point cloud in Open3D.
+Data Citation:
 
-<img src="images/test0_octree.png" width="550" height="250">
+Laefer, D.F., Vo, A.-V. 2020. “2019 LiDAR Data Collection for Sunset Park” NYU Spatial Data Repository, Brooklyn, NY” doi.org/10.17609/4cpx-2h33/. Available at http://hdl.handle.net/2451/60458
 
-You can also inspect the octree structure of the file using the code in the test file, and clean the graph using Gephi.
+The lightpole data was retrieved at:
 
-<img src="images/test2_gephi_octree.png" width="300" height="300">
+<img src="images/lightpole.png" width="200" height="300">
 
-Here is a  more complicated example with larger point cloud file in octree structure and k-d tree structure.
 
-<img src="gephis/octree-cleaned/streetlight_chunked_octree.png" width="310" height="310">
-<img src="gephis/kdtree-cleaned/streetlight_chunked_kdtree.png" width="300" height="310">
+Some Images (still work in progress, definitely having some errors):
+
+<img src="images/incomplete_kdtree_visual.png" width="200" height="300">
+<img src="images/incomplete_r-tree_visual.png" width="310" height="300">

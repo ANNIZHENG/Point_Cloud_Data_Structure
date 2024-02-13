@@ -19,7 +19,7 @@ Laefer, D.F., Vo, A.-V. 2020. “2019 LiDAR Data Collection for Sunset Park” N
 
 The lightpole data was retrieved at:
 
-<img src="images/lightpole.png" width="300" height="150">
+<img src="images/lightpole.png" width="300" height="200">
 
 
 Some Images (still work in progress, definitely having some errors):

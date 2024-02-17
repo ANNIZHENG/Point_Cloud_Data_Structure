@@ -14,7 +14,7 @@ point_cloud = np.asarray(point_cloud_file.points)
 
 # Octree Data Structure
 class Node:
-    def __init__(self, points, center, half_width, depth=0, max_depth=100, max_points=8): # max_depth=6, max_points=8*8?
+    def __init__(self, points, center, half_width, depth=0, max_depth=100, max_points=8): 
         self.points = points
         self.center = center
         self.half_width = half_width
@@ -36,7 +36,7 @@ class Node:
                                 self.center[1] + dy * self.half_width,
                                 self.center[2] + dz * self.half_width]
 
-                    # Find points inside the boudning box
+                    # Find points inside the bounding box
                     child_points = [pt for pt in self.points if self.point_found(pt, new_center)]
 
                     # If there are points, create child node
@@ -87,6 +87,7 @@ print('Memory Used: ', memory_used, 'MB')
 nx.write_gexf(graph, ...) # output file name here
 
 '''
+
 Performance:
 
 House
@@ -100,4 +101,5 @@ Octree Memory Used:  173.234375 MB
 Streetlight
 Octree Performance:  0.3431971073150635
 Octree Memory Used:  13.921875 MB
+
 '''

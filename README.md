@@ -31,7 +31,7 @@ The lightpole data was retrieved at:
 
 <img src="images/lightpole.png" width="300" height="200">
 
-### Some Visualizations (still work in progress, definitely have some errors):
+### Some visualizations (still a work in progress, likely containing errors):
 
-<img src="images/incomplete_kdtree_visual.png" width="300" height="250">
-<img src="images/incomplete_r-tree_visual.png" width="310" height="300">
+<img src="images/incomplete_kdtree_visual.png" width="200" height="150">
+<img src="images/incomplete_r-tree_visual.png" width="210" height="200">

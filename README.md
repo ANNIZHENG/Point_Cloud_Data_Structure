@@ -32,5 +32,5 @@ Laefer, D.F., Vo, A.-V. 2020. “2019 LiDAR Data Collection for Sunset Park” N
 
 ### Some visualizations (still a work in progress, likely containing errors):
 
-<img src="images/incomplete_kdtree_visual.png" width="200" height="150">
+<img src="images/incomplete_octree_visual.png" width="200" height="150">
 <img src="images/incomplete_r-tree_visual.png" width="210" height="200">

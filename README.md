@@ -32,4 +32,4 @@ Laefer, D.F., Vo, A.-V. 2020. “2019 LiDAR Data Collection for Sunset Park” N
 
 ### Sample Octree (with depth=3) Visualization for a House Point Cloud:
 
-<img src="images/incomplete_octree_visual.png" width="300" height="300">
+<img src="images/incomplete_octree_visual.png" width="400" height="400">

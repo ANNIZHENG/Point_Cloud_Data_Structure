@@ -7,17 +7,17 @@ Urban Studies, Storage and Access of Point Cloud File, Data Structure
 ### Layout
 ```
 .
-├── .ideas/                          # trials for creating K-D tree visualizations
-├── data/                            # point cloud files and images of the objects
+├── data/
 │   ├── House/
 │   ├── Light Pole/
 │   └── Tree/
-├── images/                          # used to decorate the README.md page
-├── octree_visual_implementations/   # edge.csv and node.csv for creating network visualizations in Gephi
+├── images/
+├── kdtree_visual_implementations/
+├── octree_visual_implementations/
 │   ├── Light Pole/
 │   ├── House/
 │   └── Tree/
-├── tests/                           # trials for creating tree visualizations
+├── tests/
 │   ├── env/
 │   └── gephis/
 └── README.md

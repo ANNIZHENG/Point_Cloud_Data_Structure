@@ -7,19 +7,14 @@ Urban Studies, Storage and Access of Point Cloud File, Data Structure
 ### Layout
 ```
 .
-├── data/
+├── data/					# contains point cloud data file in las and csv formats
 │   ├── House/
 │   ├── Light Pole/
 │   └── Tree/
-├── images/
-├── kdtree_visual_implementations/
-├── octree_visual_implementations/
-│   ├── Light Pole/
-│   ├── House/
-│   └── Tree/
-├── tests/
+├── images/					# contains images to be displayed in README.md
+├── visualizations/			# contains produced data visualizations in the chosen data structures
+├── tests/					# contains several trials of python codes for implementing those visualizations
 │   ├── env/
-│   └── gephis/
 └── README.md
 ```
 

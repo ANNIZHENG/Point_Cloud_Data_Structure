@@ -21,10 +21,8 @@ Urban Studies, Storage and Access of Point Cloud File, Data Structure
 └── README.md
 ```
 
-### Data:
-```
-Laefer, D.F., Vo, A.-V. 2020. “2019 LiDAR Data Collection for Sunset Park” NYU Spatial Data Repository, Brooklyn, NY” doi.org/10.17609/4cpx-2h33/. Available at http://hdl.handle.net/2451/60458
-```
+### Data Source:
+> Laefer, D.F., Vo, A.-V. 2020. “2019 LiDAR Data Collection for Sunset Park” NYU Spatial Data Repository, Brooklyn, NY doi.org/10.17609/4cpx-2h33/. Available at http://hdl.handle.net/2451/60458
 
 <img src="images/data.png" width="400" height="300">
 

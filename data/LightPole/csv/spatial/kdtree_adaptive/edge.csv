@@ -1,0 +1,15 @@
+Source,Target,Type
+0,38600,Directed
+38600,24415,Directed
+24415,19352,Directed
+24415,42088,Directed
+38600,47572,Directed
+47572,63247,Directed
+47572,81820,Directed
+0,80460,Directed
+80460,77512,Directed
+77512,22577,Directed
+77512,94193,Directed
+80460,71897,Directed
+71897,92971,Directed
+71897,43844,Directed

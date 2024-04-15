@@ -1,0 +1,15 @@
+Source,Target,Type
+0,23488,Directed
+23488,64313,Directed
+64313,91952,Directed
+64313,81272,Directed
+23488,66677,Directed
+66677,18696,Directed
+66677,13742,Directed
+0,18733,Directed
+18733,19900,Directed
+19900,13651,Directed
+19900,87958,Directed
+18733,94810,Directed
+94810,96871,Directed
+94810,16544,Directed

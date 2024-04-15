@@ -1,0 +1,15 @@
+Source,Target,Type
+0,13240,Directed
+13240,79257,Directed
+79257,74264,Directed
+79257,64879,Directed
+13240,78083,Directed
+78083,6531,Directed
+78083,18005,Directed
+0,20886,Directed
+20886,61880,Directed
+61880,90101,Directed
+61880,1566,Directed
+20886,12310,Directed
+12310,14941,Directed
+12310,61413,Directed

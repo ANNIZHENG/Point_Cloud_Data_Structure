@@ -1,0 +1,15 @@
+Source,Target,Type
+0,62064,Directed
+62064,71100,Directed
+71100,25423,Directed
+71100,86773,Directed
+62064,62706,Directed
+62706,82617,Directed
+62706,63953,Directed
+0,45961,Directed
+45961,93252,Directed
+93252,8724,Directed
+93252,71677,Directed
+45961,86990,Directed
+86990,62553,Directed
+86990,67293,Directed

@@ -1,0 +1,15 @@
+Source,Target,Type
+0,70363,Directed
+70363,57798,Directed
+57798,8042,Directed
+57798,10582,Directed
+70363,30452,Directed
+30452,79079,Directed
+30452,84915,Directed
+0,85073,Directed
+85073,99604,Directed
+99604,1740,Directed
+99604,67679,Directed
+85073,27165,Directed
+27165,46504,Directed
+27165,69277,Directed

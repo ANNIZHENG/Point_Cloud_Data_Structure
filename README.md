@@ -7,17 +7,16 @@ Urban Studies, Storage and Access of Point Cloud File, Data Structure
 ### Layout
 ```
 .
-├── data/    # point cloud data files in las and csv formats and some visualizations of them in gephi_img and img folders
+├── data/                  # Point cloud data files (.las, .csv) and data visualization (.gephi)
 │   ├── House/
 │   ├── Light Pole/
 │   └── Tree/
-├── images/    # images to be displayed in README.md
-├── visualizations/    # contains produced data visualizations in the chosen data structures
-├── tests/    # several old python codes for implementing those visualizations
-│   ├── env/    # the environment for running the test codes
-├── Octree-Visual.ipynb/    # code for creating node.csv and edge.csv for creating octree visualization in Gephi and some topological data analysis
-├── KDTree-Standard-Visual.ipynb/    # code for creating node.csv and edge.csv for creating standard K-D tree visualization in Gephi and doing some topological data analysis
-├── KDTree-Adaptive-Visual.ipynb/    # code for creating node.csv and edge.csv for creating adaptive K-D tree (axis-split based on variance) visualization in Gephi and some topological data analysis
+├── images/                # Displayed images
+│   ├── visualizations/    # Data visualizations/data flowers in Octree and K-D Tree data structures
+├── tests/                 # Unused/Old python codes for data visualizations
+│   ├── env/               # The environment for running test codes
+├── Octree-Visual.ipynb/   # Octree Implementation and Visualization
+├── KDTree-Visual.ipynb/   # K-D Tree Implementation and Visualization
 ├── RTree-Visual.ipynb/    # (incomplete) code for creating R tree visualization using matplotlib
 └── README.md
 ```

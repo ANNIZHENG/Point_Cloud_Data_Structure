@@ -41,3 +41,13 @@ Urban Studies, Storage and Access of Point Cloud File, Data Structure
 ### Example of K-D Tree-Based Structural Visualization
 
 <img src="images/tda_kdtree.png" width="550" height="800">
+
+### Two orders of Producing K-D Trees were Employed
+
+**Here is a visualization of how a house point cloud was cut along with the x-axis first**
+
+<img src="images/house_randomxyz_firstcut.png" width="400" height="400">
+
+**Here is a visualization of how a house point cloud was cut along with the z-axis first**
+
+<img src="images/house_randomzyx_firstcut.png" width="400" height="400">

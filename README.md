@@ -36,8 +36,8 @@ Urban Studies, Storage and Access of Point Cloud File, Data Structure
 
 ### Example of Octree-Based Structural Visualization
 
-<img src="images/tda_octree.png" width="500" height="800">
+<img src="images/tda_octree.png" width="550" height="800">
 
 ### Example of K-D Tree-Based Structural Visualization
 
-<img src="images/tda_kdtree.png" width="500" height="800">
+<img src="images/tda_kdtree.png" width="550" height="800">

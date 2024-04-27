@@ -11,7 +11,7 @@ Urban Studies, Storage and Access of Point Cloud File, Data Structure
 │   ├── House/
 │   ├── Light Pole/
 │   └── Tree/
-├── images/                # Displayed images
+├── images/                # Images
 │   ├── visualizations/    # Data visualizations/data flowers in Octree and K-D Tree data structures
 ├── tests/                 # Unused/Old python codes for data visualizations
 │   ├── env/               # The environment for running test codes
@@ -26,6 +26,18 @@ Urban Studies, Storage and Access of Point Cloud File, Data Structure
 
 <img src="images/data.png" width="400" height="300">
 
-### Sample Octree (with depth=3) Visualization for a House Point Cloud:
+### Sample Octree Visualization for a Randomly Subsampled Tree Point Cloud:
 
-<img src="images/incomplete_octree_visual.png" width="400" height="400">
+<img src="images/tree_random_octree.png" width="400" height="400">
+
+### Sample K-D Tree Visualization for a Randomly Subsampled Tree Point Cloud:
+
+<img src="images/tree_random_kdtree_xyz.png" width="400" height="400">
+
+### Example of Octree-Based Structural Visualization
+
+<img src="images/tda_octree.png" width="400" height="800">
+
+### Example of K-D Tree-Based Structural Visualization
+
+<img src="images/tda_kdtree.png" width="400" height="800">
